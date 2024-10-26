@@ -118,10 +118,8 @@ Project Url : <a>https://shanmukhytclone.ccbp.tech/</a>
 
 #### Sample Credentials
 
-```json
-{
-  "username": "rahul",
-  "password": "rahul@2021"
-}
-```
+  ```text
+   username: rahul
+   password: rahul@2021
+  ```
 
