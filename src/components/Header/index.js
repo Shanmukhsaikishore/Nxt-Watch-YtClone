@@ -45,7 +45,7 @@ const Header = props => {
   return (
     <ThemeContext.Consumer>
       {value => {
-        const {isDark, changeTheme} = value
+        const {isDark, changeTheme, changeTab} = value
         const imgUrl = isDark
           ? 'https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-dark-theme-img.png'
           : 'https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png'
@@ -62,10 +62,14 @@ const Header = props => {
           changeTheme()
         }
 
+        const onClickLogo = () => {
+          changeTab('/')
+        }
+
         return (
           <NavBar bgColor={bgColor}>
             <Link to="/">
-              <NavLogo src={imgUrl} alt="website logo" />
+              <NavLogo src={imgUrl} onClick={onClickLogo} alt="website logo" />
             </Link>
             <NavItemsContainer>
               <li className="nav-item">

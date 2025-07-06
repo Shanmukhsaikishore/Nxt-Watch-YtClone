@@ -22,7 +22,6 @@ import ProtectedRoute from './components/ProtectedRoute'
 
 import './App.css'
 
-// Replace your code here
 class App extends Component {
   state = {
     isDark: false,
